@@ -2,37 +2,34 @@
     <div class = "main">
         <section class = "right">
            <div class="dynamic">
-               <div class="hd">
-                   最新动态
-               </div>
+                <div class="hd">
+                    最新动态
+                </div>
                 <div>
-             
-                    <div class="block">
+                <div class="block">
                             <el-timeline>
                                 <el-timeline-item timestamp="2018/4/12" placement="top">
-                                <el-card>
-                                    <h4>更新 Github 模板</h4>
-                                    <p>fancy 提交于 2019/3/01 20:46</p>
-                                </el-card>
+                                    <el-card>
+                                        <h4>更新 Github 模板</h4>
+                                        <p>fancy 提交于 2019/3/01 20:46</p>
+                                    </el-card>
                                 </el-timeline-item>
                                 <el-timeline-item timestamp="2018/4/3" placement="top">
-                                <el-card>
-                                    <h4>更新 Github 模板</h4>
-                                    <p>fancy 提交于 2019/3/01 20:46</p>
-                                </el-card>
+                                    <el-card>
+                                        <h4>更新 Github 模板</h4>
+                                        <p>fancy 提交于 2019/3/01 20:46</p>
+                                    </el-card>
                                 </el-timeline-item>
                                 <el-timeline-item timestamp="2018/4/2" placement="top">
-                                <el-card>
-                                    <h4>更新 Github 模板</h4>
-                                    <p>fancy 提交于 2019/3/03 10:46</p>
-                                </el-card>
+                                    <el-card>
+                                        <h4>更新 Github 模板</h4>
+                                        <p>fancy 提交于 2019/3/03 10:46</p>
+                                    </el-card>
                                 </el-timeline-item>
                             </el-timeline>
                     </div>
                 </div>
-
-           </div>
-           
+           </div>       
            <div class="todos">
                <div class="hd">todos</div>
                <div>
@@ -79,7 +76,7 @@
                    <el-progress type="circle" :percentage="100" color = "#8e71c7"></el-progress>
                    <div class = "todoPro">
                        <p>正常 <span>&nbsp;&nbsp; 8 </span></p>
-                        <p>结束 <span>&nbsp;&nbsp; 0 </span></p>
+                       <p>结束 <span>&nbsp;&nbsp; 0 </span></p>
                    </div>
                </div>
            </div>
@@ -96,21 +93,19 @@
                                 <a class = "active">后台登录系统</a>
                             </li>
                              <li>
-                                <a>表单验证</a>
-                                
+                                <a>表单验证</a>  
                             </li>
                              <li>
-                                 <a>asdfg</a>
-                                 
+                                <a>asdfg</a>   
                             </li>
                              <li>
-                                 <a>零零duang</a>
+                                <a>零零duang</a>
                             </li>
                              <li>
-                                 <a>哈娃项目</a>
+                                <a>哈娃项目</a>
                             </li>
                              <li>
-                                 <a>末世</a>
+                                <a>末世</a>
                             </li>
                          </ul>
                       </div> 
@@ -131,8 +126,7 @@
                                     <el-step title="进行中"></el-step>
                                      <el-step title="已完成"></el-step>
                                 </el-steps>
-                          </div>
-                         
+                          </div>                        
                       </div>
                  </div>
             </div>
@@ -179,23 +173,16 @@
                                         <el-step title="已发布" description="1"></el-step>
                                 </el-steps>
 
-                             </div>
-                             
+                          </div>                     
                           </div>
                           <div class="progress">
-
                               <el-progress :percentage="0"></el-progress>
                                 <el-progress :percentage="25"></el-progress>
                                 <el-progress :percentage="80"></el-progress>
-    
-    
                           </div>
-                         
                       </div>
                  </div>
             </div>
-
-
             <div class = "projectCount">
                     <div class="hd">
                         流程图
@@ -222,27 +209,28 @@ export default {
             activeName: 'second',
        
             reverse: true,
-            activities: [{
-            content: 'fancy创建了项目',
-            timestamp: '2019-03-01'
-            }, {
-            content: 'fancy记录了任务',
-            timestamp: '2019-03-01'
-            }, {
-            content: 'andy变更了需求',
-            timestamp: '2019-03-01'
+            activities: [
+            {
+                content: 'fancy创建了项目',
+                timestamp: '2019-03-01'
+            }, 
+            {
+                content: 'fancy记录了任务',
+                timestamp: '2019-03-01'
             },
             {
-            content: 'fancy指派了任务',
-            timestamp: '2019-03-05'
+                content: 'andy变更了需求',
+                timestamp: '2019-03-01'
             },
             {
-            content: 'fancy变更了需求',
-            timestamp: '2019-03-08'
+                content: 'fancy指派了任务',
+                timestamp: '2019-03-05'
+            },
+            {
+                content: 'fancy变更了需求',
+                timestamp: '2019-03-08'
             }
             ]
-   
-    
          }
     
     },
@@ -264,16 +252,11 @@ export default {
         border-top-right-radius: 3px;
         font-weight: 700;
     }
-    .main{
-   
-      
+    .main{    
         .left{
-          
-            margin-right:350px;
-            
+             margin-right:350px; 
             .projectCount{
                 position: relative;
-                // height: 100px;
                 margin-bottom: 20px;
                 background-color: #fff;
                 border: 1px solid transparent;
@@ -281,8 +264,6 @@ export default {
                 -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 2px 6px 0 rgba(0,0,0,.045);
                 box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 2px 6px 0 rgba(0,0,0,.045);
                 .process{
-                    //   width: 100px;
-                    //   padding:10px;
                       ul{
                           li{
                               list-style:none;
@@ -323,14 +304,9 @@ export default {
                                     }
                               }
                           }
-                      }
-                        
-                        
-                        
-                    
+                      }   
                 }
                 .pj_list{
-                   
                     .listName{
                         width: 300px;
                         float:left;
