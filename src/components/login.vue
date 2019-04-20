@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <div class="container">
       <div class="login">
         <div class="title">
@@ -7,7 +7,7 @@
         </div>
         <div class="content">
           <div class="content-left">
-            <!-- <img src="./images/tubiao.png" alt="登录图片"> -->
+            <img src="../assets/slogo.png" alt="登录图片">
           </div>
           <div class="content-right">
             <form action="">
@@ -36,15 +36,21 @@ export default {
   data() {
       return {
        user: '',
-       password: ''
+       password: '',
+       checked:false
       }
   }
 }
 </script>
 <style lang="scss" scoped>
-  #app{
+  html,body{
+    width:100%;
+    height:100%;
+    background-color:rgb(26, 83, 158);
+    background:url('../assets/bgimg.jpg') no-repeat;
+  }
     .container{
-      margin-top: 10% ;
+      margin-top: 10%;
       .login{
         height: 300px;
         width: 700px;
@@ -104,5 +110,5 @@ export default {
         }
       }
     }
-  }
+  
 </style>

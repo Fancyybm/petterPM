@@ -5,11 +5,16 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 
-import Home from './components/home'
-import login from './components/login'
+
 export default new Router({
   routes: [
-      {path:'/',component:Home},
-      {name:"login",path:'/login',component:login}
+      {path:'/',component:()=> import('./components/main'),children:[
+        {path:'/',component:()=>import('./components/home')},
+        {path:'main',component:()=>import('./components/home')} 
+      ]},
+      {name:"login",path:'/login',component:()=>import('./components/login')}
   ]
 })
+
+
+

@@ -33,7 +33,7 @@
            <div class="todos">
                <div class="hd">todos</div>
                <div>
-                   <input type="text" placeholder="添加">
+                   <input type="text" pla ceholder="添加">
                    <ul>
                        <li>
                            <span></span>
@@ -244,7 +244,7 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" scoped> 
     .hd{
         padding: 12px 48px 12px 20px;
         border-bottom: 1px solid transparent;
@@ -296,7 +296,6 @@ export default {
                                         width: 0;
                                         height: 0;
                                         border-style: solid;
-                                        border-width: 15px 0 15px 10px;
                                         border-color: transparent transparent transparent #fff;
                                         position: absolute;
                                         left: 0px;
@@ -379,10 +378,7 @@ export default {
         }
         .right{
             float:right;
-            width: 300px;
-            
-          
-           
+            width: 300px;    
             .dynamic{
                 background-color: #fff;
                  padding: 0 10px;
@@ -403,7 +399,6 @@ export default {
                 }
                 ul{
                     margin-top:10px;
-
                     li{
                         list-style:none;
                         padding:5px 8px;
@@ -428,9 +423,9 @@ export default {
                      p{
                          line-height: 20px;
                          span{
-                       font-weight: 700;
-                       font-size: 20px;
-                       color:#000;
+                         font-weight: 700;
+                         font-size: 20px;
+                         color:#000;
                     }
                      }
                     
